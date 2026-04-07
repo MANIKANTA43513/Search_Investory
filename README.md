@@ -223,9 +223,10 @@ ORDER BY total_value DESC;
 
 🌐 Deployment
 
-- Backend: Render
-- Frontend: Vercel
+- Backend: https://search-investory.onrender.com/search
+- Frontend: https://search-investory.onrender.com/
 
+Demo video link:https://drive.google.com/file/d/1Q0iQ0VkW2HMHiBJynt0Ho9vU3ei2UrRA/view?usp=sharing
 ---
 
 🎯 Conclusion
