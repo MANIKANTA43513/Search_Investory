@@ -62,6 +62,9 @@ app.get('/search', (req, res) => {
     }
   }
 
+  //Add this
+  results.sort((a, b) => a.price - b.price);
+
   res.json({
     count: results.length,
     results
