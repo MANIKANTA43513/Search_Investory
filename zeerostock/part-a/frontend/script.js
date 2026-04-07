@@ -28,7 +28,7 @@ async function handleSearch() {
   if (maxPrice) params.set('maxPrice', maxPrice);
 
   try {
-    const response = await fetch(`http://localhost:3000/search?${params.toString()}`);
+    const response = await fetch(`/search?${params.toString()}`);
     const data = await response.json();
 
     hideStatus();
