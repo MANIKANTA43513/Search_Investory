@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeerostock — Inventory Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">ZEEROSTOCK</span>
+    </div>
+    <p class="tagline">Surplus Inventory Intelligence Platform</p>
+  </header>
+
+  <main class="main">
+    <section class="search-section">
+      <h1 class="heading">Search Inventory</h1>
+      <p class="subheading">Filter surplus products across all suppliers in real-time</p>
+
+      <div class="search-card">
+        <!-- Product Name -->
+        <div class="field-group">
+          <label class="field-label" for="q">Product Name</label>
+          <div class="input-wrap">
+            <span class="input-icon">🔍</span>
+            <input
+              id="q"
+              type="text"
+              class="field-input"
+              placeholder="e.g. chair, desk, keyboard…"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <!-- Category -->
+        <div class="field-group">
+          <label class="field-label" for="category">Category</label>
+          <div class="select-wrap">
+            <select id="category" class="field-select">
+              <option value="">All Categories</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Stationery">Stationery</option>
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+        </div>
+
+        <!-- Price Range -->
+        <div class="price-row">
+          <div class="field-group">
+            <label class="field-label" for="minPrice">Min Price ($)</label>
+            <input
+              id="minPrice"
+              type="number"
+              class="field-input"
+              placeholder="0"
+              min="0"
+            />
+          </div>
+          <div class="price-dash">—</div>
+          <div class="field-group">
+            <label class="field-label" for="maxPrice">Max Price ($)</label>
+            <input
+              id="maxPrice"
+              type="number"
+              class="field-input"
+              placeholder="999"
+              min="0"
+            />
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-row">
+          <button id="searchBtn" class="btn-primary" onclick="handleSearch()">
+            <span class="btn-label">Search Inventory</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <button id="resetBtn" class="btn-ghost" onclick="handleReset()">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status bar -->
+    <div id="statusBar" class="status-bar hidden"></div>
+
+    <!-- Error message -->
+    <div id="errorBox" class="error-box hidden"></div>
+
+    <!-- Results -->
+    <section id="resultsSection" class="results-section hidden">
+      <div class="results-header">
+        <h2 class="results-title">Results</h2>
+        <span id="resultCount" class="result-count"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Supplier</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- No results -->
+    <div id="noResults" class="no-results hidden">
+      <div class="no-results-icon">◎</div>
+      <p class="no-results-title">No results found</p>
+      <p class="no-results-sub">Try adjusting your filters or broadening your search terms.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Zeerostock · Inventory Search · Part A</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

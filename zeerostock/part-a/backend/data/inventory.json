@@ -1,0 +1,17 @@
+[
+  { "id": 1, "productName": "Office Chair", "category": "Furniture", "price": 120, "supplier": "ABC Traders" },
+  { "id": 2, "productName": "Standing Desk", "category": "Furniture", "price": 350, "supplier": "FurniMax" },
+  { "id": 3, "productName": "Laptop Stand", "category": "Electronics", "price": 45, "supplier": "TechZone" },
+  { "id": 4, "productName": "Wireless Mouse", "category": "Electronics", "price": 25, "supplier": "TechZone" },
+  { "id": 5, "productName": "Mechanical Keyboard", "category": "Electronics", "price": 89, "supplier": "TechZone" },
+  { "id": 6, "productName": "Whiteboard", "category": "Stationery", "price": 60, "supplier": "OfficeHub" },
+  { "id": 7, "productName": "Ballpoint Pens (Box)", "category": "Stationery", "price": 12, "supplier": "OfficeHub" },
+  { "id": 8, "productName": "Filing Cabinet", "category": "Furniture", "price": 220, "supplier": "FurniMax" },
+  { "id": 9, "productName": "USB-C Hub", "category": "Electronics", "price": 55, "supplier": "TechZone" },
+  { "id": 10, "productName": "Sticky Notes (Pack)", "category": "Stationery", "price": 8, "supplier": "OfficeHub" },
+  { "id": 11, "productName": "Ergonomic Footrest", "category": "Furniture", "price": 75, "supplier": "ABC Traders" },
+  { "id": 12, "productName": "Monitor (24 inch)", "category": "Electronics", "price": 280, "supplier": "TechZone" },
+  { "id": 13, "productName": "Desk Lamp", "category": "Furniture", "price": 40, "supplier": "ABC Traders" },
+  { "id": 14, "productName": "Notebook A4 (Pack)", "category": "Stationery", "price": 18, "supplier": "OfficeHub" },
+  { "id": 15, "productName": "Cable Management Tray", "category": "Electronics", "price": 30, "supplier": "TechZone" }
+]
